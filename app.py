@@ -29,9 +29,9 @@ VERSION = '1.0.0'
 
 @app.route('/', methods=['GET'])
 def index():
-    # Get visitor's IP address (Docker)
+    # Get visitor's IP address (DOCKER UP code)
     # ip = request.remote_addr
-    # Get client IP address from headers (Azure)
+    # Get client IP address from headers (AZURE UP code)
     ip = request.headers.get("X-Forwarded-For").split(':')[0]
     # Check if IP already exists
     cur.execute("""

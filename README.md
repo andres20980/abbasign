@@ -17,16 +17,16 @@ Docker Compose
 Azure CLI
 Terraform
 ```
-Fork the repo https://github.com/<YOUR_GITHUB_ACCOUNT>/abbasign.git in <YOUR GITHUB ACCOUNT>
+Fork the repo https://github.com/andres20980/abbasign.git in [YOUR_GITHUB_ACCOUNT]
 
 Clone the solution repository:
 ```
-git clone https://github.com/<YOUR GITHUB ACCOUNT>/abbasign.git && cd abassign
+git clone https://github.com/[YOUR_GITHUB_ACCOUNT]/abbasign.git && cd abassign
 ```
 ### Local Solution
 Build the Docker images for the application:
 
-Go to **app.py Docker UP code** and uncomment (Ctrl + K, Ctrl + U), after that:
+Go to **app.py and COMMENT Azure UP && UNCOMMENT Docker UP code** (Ctrl + K, Ctrl + U), after that:
 ```
 docker compose up -d abbasign_db
 docker compose build
@@ -39,7 +39,7 @@ sudo lsof -i tcp:5432
 sudo kill PID
 ```
 ### Azure
-Go to **app.py and uncomment Azure UP code** (Ctrl + K, Ctrl + U), after that:
+Go to **app.py and COMMENT Docker UP && UNCOMMENT Azure UP code** (Ctrl + K, Ctrl + U), after that:
 
 Deploy the application to Azure WEB App + PostgreSQL Database:
 ```
@@ -50,7 +50,7 @@ terraform apply
 ```
 After terraform creates the environment, let's deploy de Web App:
 
-_Go to **Azure>abbasign Web App>Deployment Center** and set the Github repo_ https://github.com/<YOUR GITHUB ACCOUNT>/abbasign.git
+_Go to **Azure>abbasign Web App>Deployment Center** and set the Github repo_ https://github.com/[YOUR_GITHUB_ACCOUNT]/abbasign.git
 
 Once the application is deployed, it will be accessible at [https://abbasign.azurewebsites.net]
 ![External Image](https://raw.githubusercontent.com/andres20980/abbasign/main/abbassign-app-architecture.png)
@@ -59,7 +59,7 @@ Once the application is deployed, it will be accessible at [https://abbasign.azu
 
 When you set up a _source control_ for a Web App in Azure: **GitHub Actions** sets up Continuous Integration (CI) for your application. 
 
-You can see the Workflow here: https://github.com/<YOUR GITHUB ACCOUNT>/abbassign/blob/main/.github/workflows/main_abbasign.yml
+You can see the Workflow here: https://github.com/[YOUR_GITHUB_ACCOUNT]/abbassign/blob/main/.github/workflows/main_abbasign.yml
 
 Here’s what happens:
 
@@ -69,30 +69,22 @@ Here’s what happens:
 
 * **Deployment:** If the build and tests pass, GitHub Actions deploys your web app to Azure. This ensures that your application is always up-to-date with the latest code changes.
 
-You can see that Workflows in **https://github.com/<YOUR GITHUB ACCOUNT>/abbasign/actions**
+You can see that Workflows in **https://github.com/[YOUR_GITHUB_ACCOUNT]/abbasign/actions**
 
 ### Updating the application ###
 To update the application, simply make changes to the source code and push them to the master branch of the repository. The GitHub Actions CI/CD pipeline will automatically build, test, and deploy the updated application to Azure.
 ## How to use the application
 The application has two endpoints:
 
-<<<<<<< HEAD
 /: This endpoint save the visitor's IP and show a list of unique IP's registered.
-=======
-/: This endpoint displays a list of the current unique visitor count.
->>>>>>> 9595a93 (Upload APP)
-
 /version: This endpoint returns the current app version.
 
-<<<<<<< HEAD
-=======
 For example, to get the current unique visitor count, you would send the following HTTP request:
 ```
 curl https://abbasign.azurewebsites.net
 ```
-This would return a list of the current unique visitor count.
+This would return a list of unique IP's registered.
 
->>>>>>> 9595a93 (Upload APP)
 ## Monitoring the application
 To monitor your Azure Web App, you can follow these steps:
 
