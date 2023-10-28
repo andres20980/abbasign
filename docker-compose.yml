@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  abbasign_app:
+    container_name: abbasign_app
+    image: abbasign_app:1.0.0
+    build: .
+    ports:
+      - "4000:4000"
+    depends_on:
+      - abbasign_db
+  abbasign_db:
+    container_name: abbasign_db
+    image: postgres:12
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
+    
