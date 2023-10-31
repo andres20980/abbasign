@@ -88,9 +88,9 @@ This would return a list of unique IP's registered.
 ## Monitoring the application
 To monitor your Azure Web App, you can follow these steps:
 
-* **Application Insights**: Create an Application Insights resource in the Azure Portal. It monitors availability, performance, and usage of your web apps. Use the Availability pane to set up ping tests12.
-* **Built-in Monitoring**: Azure App Service provides built-in monitoring functionality for web apps, mobile, and API apps. In the Azure portal, review quotas, metrics, set up alerts, and autoscaling rules based on metrics3.
-* **Diagnostic Settings**: Configure diagnostic settings to collect platform metrics and logs. Specify which categories of logs to collect for detailed insights1.
+* **Application Insights**: Create an Application Insights resource in the Azure Portal. It monitors availability, performance, and usage of your web apps. Use the Availability pane to set up ping tests.
+* **Built-in Monitoring**: Azure App Service provides built-in monitoring functionality for web apps, mobile, and API apps. In the Azure portal, review quotas, metrics, set up alerts, and autoscaling rules based on metrics.
+* **Diagnostic Settings**: Configure diagnostic settings to collect platform metrics and logs. Specify which categories of logs to collect for detailed insights.
 * **Resource Logs**: Route platform logs and metrics to specific locations using diagnostic settings.
 
 ## How to scale the number of servers to take more load
