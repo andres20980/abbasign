@@ -1,0 +1,79 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram id="cloud-infra" name="Infraestructura Travelio">
+    <mxGraphModel dx="1090" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Infraestructura DEV -->
+        <mxCell id="2" value="Infraestructura DEV" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="3" value="VPC DEV (10.232.0.0/16)" style="swimlane;fillColor=#D9EAD3;horizontal=1;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="600" height="300" as="geometry" />
+        </mxCell>
+
+        <mxCell id="4" value="Subnet 1 (10.232.19.96/27)" style="swimlane;fillColor=#EAD3D9;horizontal=1;fontSize=10" vertex="1" parent="3">
+          <mxGeometry x="10" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="5" value="pangea-dev-travelio-app&#10;CentOS 7" style="text;html=1;strokeColor=#000000;fillColor=#F3F3F3" vertex="1" parent="4">
+          <mxGeometry x="10" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="6" value="Subnet 2 (10.232.19.128/27)" style="swimlane;fillColor=#EAD3D9;horizontal=1;fontSize=10" vertex="1" parent="3">
+          <mxGeometry x="210" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="7" value="pangea-dev-travelio-dbs&#10;Amazon Linux" style="text;html=1;strokeColor=#000000;fillColor=#F3F3F3" vertex="1" parent="6">
+          <mxGeometry x="10" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="8" value="Subnet 3 (10.232.19.160/27)" style="swimlane;fillColor=#EAD3D9;horizontal=1;fontSize=10" vertex="1" parent="3">
+          <mxGeometry x="410" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="9" value="pangea-dev-travelio-dockers&#10;Amazon Linux" style="text;html=1;strokeColor=#000000;fillColor=#F3F3F3" vertex="1" parent="8">
+          <mxGeometry x="10" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Infraestructura PROD -->
+        <mxCell id="10" value="Infraestructura PROD" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="370" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="11" value="VPC PROD (10.234.0.0/16)" style="swimlane;fillColor=#E6B8AF;horizontal=1;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="400" width="600" height="300" as="geometry" />
+        </mxCell>
+
+        <mxCell id="12" value="Subnet 1 (10.234.19.96/27)" style="swimlane;fillColor=#EAD3D9;horizontal=1;fontSize=10" vertex="1" parent="11">
+          <mxGeometry x="10" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="13" value="pangea-prod-travelio-app&#10;CentOS 7" style="text;html=1;strokeColor=#000000;fillColor=#F3F3F3" vertex="1" parent="12">
+          <mxGeometry x="10" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="14" value="Subnet 2 (10.234.19.128/27)" style="swimlane;fillColor=#EAD3D9;horizontal=1;fontSize=10" vertex="1" parent="11">
+          <mxGeometry x="210" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="15" value="pangea-prod-travelio-dbs&#10;Amazon Linux" style="text;html=1;strokeColor=#000000;fillColor=#F3F3F3" vertex="1" parent="14">
+          <mxGeometry x="10" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="16" value="Subnet 3 (10.234.19.160/27)" style="swimlane;fillColor=#EAD3D9;horizontal=1;fontSize=10" vertex="1" parent="11">
+          <mxGeometry x="410" y="20" width="180" height="250" as="geometry" />
+        </mxCell>
+
+        <mxCell id="17" value="pangea-prod-travelio-dockers&#10;Amazon Linux" style="text;html=1;strokeColor=#000000;fillColor=#F3F3F3" vertex="1" parent="16">
+          <mxGeometry x="10" y="40" width="160" height="50" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
